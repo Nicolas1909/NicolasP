@@ -1,0 +1,117 @@
+.AboutMe {
+  height: 100vh;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  margin-left: 5%;
+  border-radius: 5px 5px 0px 0px;
+  background-color: #fff;
+}
+.aboutme-text {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+.aboutme-photo {
+  width: 40%;
+  background-color: #00000038;
+  padding: 0px 8px 8px 0px;
+  border-radius: 5px;
+  transform: rotate(-3deg);
+}
+figure {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #eaeaea;
+  padding: 18px 18px 30px 18px;
+  border-radius: 5px;
+  transform: rotate(5deg);
+}
+figure > img {
+  height: 100%;
+  width: 100%;
+}
+figcaption {
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  text-align: center;
+  color: #2c2c2c;
+  margin-top: 5%;
+}
+figure:before,
+figure:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 180px;
+  background-color: #66666699;
+  transform: rotate(-40deg);
+}
+figure:before {
+  top: 3px;
+  left: -55px;
+}
+figure:after {
+  bottom: 3px;
+  right: -60px;
+}
+@media screen and (max-width: 850px) {
+  .AboutMe {
+    flex-direction: column;
+  }
+  .aboutme-text {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    font-size: 70%;
+    margin-right: 0%;
+    margin-bottom: 30px;
+  }
+  .aboutme-photo {
+    width: 50%;
+    padding: 0px 5px 5px 0px;
+    transform: rotate(5deg);
+  }
+  figure {
+    padding: 0px 0px 15% 0px;
+    border-radius: 0px 0px 5px 5px;
+    transform: rotate(5deg);
+  }
+  figure > img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+  }
+  figcaption {
+    font-size: 20px;
+    margin-top: 1%;
+  }
+  figure:before,
+  figure:after {
+    display: none;
+  }
+}
+@media screen and (max-width: 670px) {
+  .AboutMe {
+    margin-top: -38px;
+  }
+  figcaption {
+    font-size: 15px;
+    margin-top: 1%;
+  }
+}
+@media screen and (max-width: 470px) {
+  .AboutMe {
+    margin-top: -25px;
+  }
+  figcaption {
+    font-size: 10px;
+    margin-top: -1%;
+  }
+}
